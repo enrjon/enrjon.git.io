@@ -10,9 +10,7 @@
 </head>
   <header>
       <nav class = "nav-content">
-        <a>
-            <img src = "img/logo.png" alt = "logo">
-        </a>
+        <a><img src = "img/logo.png" alt = "logo"></a>
         <ul class="nav-left">
             <li><a href = "index.php">Home</a></li>
             <li><a href = "">Nav Tab 1</a></li>
@@ -21,33 +19,31 @@
         </ul>
         <div class="nav-right">
             <div class="tab-content">
-                <div id="login">
-                    <h1>Welcome to BaseSite!</h1>
+                <div class="tab" id="login">
                     <h3 class="required-header">* - Required</h3>
                     <form action="includes/login.php" method = "post">
                         <div class="field-wrap">
                             <label>
-                                Email Address<span class="required-header">*</span>
+                                <span class="required-header">*</span>Email Address
                             </label>
                             <input type="email" required autocomplete="off" name="email"/>
                         </div>
                         <div class="field-wrap">
                             <label>
-                                Password<span class="required-header">*</span>
+                                <span class="required-header">*</span>Password
                             </label>
                             <input type="password" required autocomplete="off" name="password"/>
                         </div>
                         <p class="forgot">
                             <a href="forgot.php">
-                                Forgot Password?
+                                Forgot Password
                             </a>
                         </p>
                         <button class="button button-block" name="login"/>Log In</button>
                     </form>
                 </div>
 
-                <div id="register">
-                    <h1>Register for an Account</h1>
+                <div class="tab" id="register">
                     <h3 class="required-header">* - Required</h3>
                     <form action="includes/register.php" method = "post">
                         <div class="field-wrap">
@@ -71,21 +67,17 @@
 
                         <button class="button button-block" name="register"/>Register</button>
                     </form>
-                    <ul>
-                        <li class="tab"><a href="#register">Register</a></li>
-                        <li class="tab active"><a href="#login">Log In</a></li>
-                    </ul>
+
                 </div>
-
-                <form action="includes/logout.php" method="post">
-                    <button type="submit" name="logout-submit">Log Out</button>
-                </form>
-
-            </div>
+                <ul>
+                    <li class="tab active"><a href="#register">Register</a></li>
+                    <li class="tab"><a href="#login">Log In</a></li>
+                </ul>
+            </div>            
         </div>
       </nav>
+
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
       </script>
-
       <script src="js/index.js"></script>
   </header>

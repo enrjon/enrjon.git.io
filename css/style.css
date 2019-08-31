@@ -76,16 +76,34 @@ textarea {
 	border: 2px solid #a0b3b0;
 	resize: vertical;
 }
-.nav-left {
-	display: inline-flex;
+
+nav {
+
+}
+.nav-content {
+	background-color: #1e5c1d;
+	display: run-in;
+	position: relative;
 	list-style: none;
+	margin: 0;
+	color: #7fcb7d;
+	padding: 15px 0 30px 5%;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); /*Using rgba for ease of opacity*/
+}
+.nav-content:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 .nav-right {
-	display:block;
-	direction: rtl;
-}
-.nav-right ul {
+	display:inline-flex;
+	margin-left: 50%;
 	position: absolute;
+}
+.nav-left {
+	position: absolute;
+	list-style: none;
+	display: inline-flex;
 }
 .nav-tabs {
     position: relative;
@@ -99,30 +117,12 @@ textarea {
 }
 
 .tab {
-	display: inline;
-
-}
-.tab-content {
 	display: inline-flex;
 }
-.tab-content > div:last-child {
+.tab-content {
+}
+.tab-content > div:last-child, #login {
 	display: none;
-}
-
-.nav-content {
-	background-color: #1e5c1d;
-	display:run-in;
-	position: relative;
-	list-style: none;
-	margin: 0;
-	color: #7fcb7d;
-	padding: 30px 0 60px 5%;
-	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); /*Using rgba for ease of opacity*/
-}
-.nav-content:after {
-	content: "";
-	display: table;
-	clear: both;
 }
 .field-wrap {
 	position: relative;
