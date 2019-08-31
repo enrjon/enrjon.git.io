@@ -21,7 +21,6 @@ a {
 	color: #fff;
 	-webkit-transition: .5s ease;
 	transition: .5s ease;
-	padding: 5px;
 }
 a:hover {
 	color: #7fcb7d;
@@ -79,17 +78,18 @@ textarea {
 
 nav {
 	background-color: #1e5c1d;
-	display: run-in;
 	position: relative;
 	list-style: none;
 	margin: 0;
 	column-count: 3;
 	color: #7fcb7d;
-	padding: 2% 0px 2% 0px;
+	padding: 5px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); /*Using rgba for ease of opacity*/
 }
-.nav-content {
-	float: left;
+.content {
+	display: inline-flex;
+	list-style: none;
+	align-items: center;
 }
 
 .active {
@@ -97,7 +97,7 @@ nav {
 	color: #fff;
 }
 
-.tab, #site-nav {
+.tab {
 	display: inline-flex;
 }
 .tab-content > div:last-child, #login {
