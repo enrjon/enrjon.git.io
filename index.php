@@ -1,21 +1,11 @@
 <?php
-  require 'db.php';
-  session_start();
+    require 'header.php';
 ?>
+    <main>
+        <p>You are Logged in!</p>
+        <p>You are Logged out!</p>
+    </main>
 
-<!DOCTYPE html>
-
-<html>
-<head>
-  <title>Test Site</title>
-    <?php include 'css/css.html';?>
-</head>
-<?php
-  if($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if(isset($_POST['login'])) {
-      require 'login.php'
-    }
-  }
-?>
-
-</html>
+    <?php
+        require 'footer.php';
+    ?>
