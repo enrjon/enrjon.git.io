@@ -78,37 +78,18 @@ textarea {
 }
 
 nav {
-
-}
-.nav-content {
 	background-color: #1e5c1d;
 	display: run-in;
 	position: relative;
 	list-style: none;
 	margin: 0;
+	column-count: 3;
 	color: #7fcb7d;
-	padding: 15px 0 30px 5%;
+	padding: 2% 0px 2% 0px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); /*Using rgba for ease of opacity*/
 }
-.nav-content:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-.nav-right {
-	display:inline-flex;
-	margin-left: 50%;
-	position: absolute;
-}
-.nav-left {
-	position: absolute;
-	list-style: none;
-	display: inline-flex;
-}
-.nav-tabs {
-    position: relative;
-    display: inline-flex;
-	tab-size: 4;
+.nav-content {
+	float: left;
 }
 
 .active {
@@ -116,10 +97,8 @@ nav {
 	color: #fff;
 }
 
-.tab {
+.tab, #site-nav {
 	display: inline-flex;
-}
-.tab-content {
 }
 .tab-content > div:last-child, #login {
 	display: none;

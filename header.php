@@ -4,21 +4,23 @@
   <meta charset = "utf-8">
   <meta name = "description" content = "Enrique's practice site for experimenting with web scripting.">
   <meta name = viewport content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Base Site by Pinedo</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
   <header>
-      <nav class = "nav-content">
-        <a><img src = "img/logo.png" alt = "logo"></a>
-        <ul class="nav-left">
-            <li><a href = "index.php">Home</a></li>
-            <li><a href = "">Nav Tab 1</a></li>
-            <li><a href = "">Nav Tab 2</a></li>
-            <li><a href = "">Nav Tab 3</a></li>
-        </ul>
-        <div class="nav-right">
+      <nav>
+          <div class="nav-content">
+              <a><img src = "img/logo.png" alt = "logo"></a>
+              <ul id="site-nav">
+                <li><a href = "index.php">Home</a></li>
+                <li><a href = "">Nav Tab 1</a></li>
+                <li><a href = "">Nav Tab 2</a></li>
+                <li><a href = "">Nav Tab 3</a></li>
+              </ul>
+          </div>
+          <div class="nav-content">
             <div class="tab-content">
-                <?php require 'navTabs.html'?>
+                <?php //require 'navTabs.html'?>
             </div>
         </div>
       </nav>
