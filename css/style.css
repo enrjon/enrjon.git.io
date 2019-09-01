@@ -113,7 +113,7 @@ a:not([href="index.php"]):hover {
 	color: #fff;
 }
 .tab {
-	display: inline-flex;
+	display: inline-block;
 }
 .tab-content > div:last-child, #login {
 	display: none;
