@@ -7,6 +7,7 @@
   <title>Base Site by Pinedo</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
   <header>
       <nav>
         <ul>
