@@ -123,7 +123,7 @@ ul.nav-left > li > a:hover {
 .tab-content > div:last-child, #login {
 	display: none;
 }
-.tab-content, .tabs {
+.tab-content, .tabs, form > button {
 	float: right;
 	clear: right;
 }
@@ -136,6 +136,23 @@ ul.nav-left > li > a:hover {
 	margin-bottom: 2%;
 	display: inline-flex;
 }
-.forgot {
-	float: right;
+.button {
+	border: 0;
+	outline: none;
+	border-radius: 0;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	background: #27b023;
+	color: #fff;
+	-webkit-appearance: none;
+}
+
+.button:hover, .button:focus {
+	background: #7fcb7d;
+}
+
+.button-block, .forgot {
+	padding: 5px 10px;
 }
