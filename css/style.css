@@ -90,6 +90,7 @@ ul {
 	align-items: center;
 	padding: 10px 0 0 10px;
 	margin: 0px;
+	float: right;
 }
 li {
 	float: left;
@@ -117,6 +118,10 @@ a a:not([href="index.html"]):hover, a:not([href^="#"]):hover {
 }
 .tab-content > div:last-child, #login {
 	display: none;
+}
+.tab-content {
+	display: inline-block;
+	padding-left: 50%;
 }
 .field-wrap {
 	position: relative;
