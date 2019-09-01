@@ -102,10 +102,10 @@ li a {
 .nav-logo > a:first-child {
 	padding: 0px;
 }
-a[href="index.php"]:hover {
+a[href="index.html"]:hover {
 	padding: 30px;
 }
-a:not([href="index.php"]):hover {
+a:not([href="index.html"]):hover {
 	padding: 15px;
 }
 .active {
