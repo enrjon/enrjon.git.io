@@ -49,6 +49,9 @@ h3 {
 
 .required-header {
     color: #ff9292;
+	text-align: left;
+	float: left;
+
 }
 
 input, textarea {
@@ -92,11 +95,10 @@ ul {
 	list-style-type: none;
 	display: inline-flex;
 	align-items: center;
-	padding: 10px 0 0 10px;
 	margin: 0px;
 	float: left;
 }
-li {
+.nav-left > li {
 	float: left;
 }
 
@@ -130,7 +132,8 @@ ul.nav-left > li > a:hover {
 }
 .field-wrap {
 	position: relative;
-	margin-bottom: 3%;
+	margin-top: 4%;
+	margin-bottom: 2%;
 	display: inline-flex;
 }
 .forgot {
