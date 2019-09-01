@@ -1,5 +1,7 @@
 *, *:before, *:after {
 	box-sizing: border-box;
+	-webkit-transition: .5s ease;
+	transition: .5s ease;
 }
 
 html {
@@ -19,8 +21,6 @@ body {
 a {
 	text-decoration: none;
 	color: #fff;
-	-webkit-transition: .5s ease;
-	transition: .5s ease;
 }
 a:hover {
 	color: #7fcb7d;
@@ -62,8 +62,6 @@ input, textarea {
 	border: 1px solid #a0b3b0;
 	color: #fff;
 	border-radius: 0;
-	-webkit-transition: border-color .25s ease, box-shadow .25s ease;
-	transition: border-color .25s ease, box-shadow .25s ease;
 }
 
 input:focus, textarea:focus {
@@ -79,24 +77,41 @@ textarea {
 nav {
 	background-color: #1e5c1d;
 	position: relative;
-	list-style: none;
-	margin: 0;
-	column-count: 3;
+	margin: 0px;
 	color: #7fcb7d;
-	padding: 5px;
+	padding:0px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); /*Using rgba for ease of opacity*/
 }
-.content {
+
+ul {
+	position: relative;
+	list-style-type: none;
 	display: inline-flex;
-	list-style: none;
 	align-items: center;
+	padding: 10px 0 0 10px;
+	margin: 0px;
+}
+li {
+	float: left;
 }
 
+li a {
+	padding: 12px;
+	font-size: 15pt;
+}
+.nav-logo > a:first-child {
+	padding: 0px;
+}
+a[href="index.php"]:hover {
+	padding: 30px;
+}
+a:not([href="index.php"]):hover {
+	padding: 15px;
+}
 .active {
 	background: #27b023;
 	color: #fff;
 }
-
 .tab {
 	display: inline-flex;
 }

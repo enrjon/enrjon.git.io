@@ -9,17 +9,16 @@
 </head>
   <header>
       <nav>
-          <ul class="content">
-            <li><a href="index.php"><img src = "img/logo.png" alt = "logo" width="35%"></a></li>
+        <ul>
+            <li class="nav-logo"><a href="index.php"><img src = "img/logo.png" alt = "logo"></a></li>
             <li><a href = "index.php">Home</a></li>
             <li><a href = "">Nav Tab 1</a></li>
             <li><a href = "">Nav Tab 2</a></li>
             <li><a href = "">Nav Tab 3</a></li>
-          </ul>
-          <div class="content">
-            <div class="tab-content">
-                <?php //require 'navTabs.html'?>
-            </div>
+        </ul>
+
+        <div class="tab-content">
+            <?php //require 'navTabs.html'?>
         </div>
       </nav>
       <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'>
