@@ -78,6 +78,7 @@ nav {
 	background-color: #1e5c1d;
 	position: relative;
 	margin: 0px;
+	column-count: 2;
 	color: #7fcb7d;
 	padding:0px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); /*Using rgba for ease of opacity*/
@@ -106,7 +107,7 @@ li a {
 a[href="index.html"]:hover {
 	padding: 30px;
 }
-a a:not([href="index.html"]):hover, a:not([href^="#"]):hover {
+ul.nav-left > li > a:hover {
 	padding: 15px;
 }
 .active {
@@ -121,9 +122,14 @@ a a:not([href="index.html"]):hover, a:not([href^="#"]):hover {
 }
 .tab-content {
 	display: inline-block;
-	padding-left: 50%;
+}
+.tabs {
 }
 .field-wrap {
 	position: relative;
 	margin-bottom: 3%;
+	display: inline-flex;
+}
+.forgot {
+	float: right;
 }
