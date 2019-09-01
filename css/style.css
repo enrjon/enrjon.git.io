@@ -105,7 +105,7 @@ li a {
 a[href="index.html"]:hover {
 	padding: 30px;
 }
-a:not([href="index.html"]):hover {
+a a:not([href="index.html"]):hover, a:not([href^="#"]):hover {
 	padding: 15px;
 }
 .active {
