@@ -11,7 +11,7 @@ html {
   overflow-x: hidden;
 }
 body {
-	background: #2e852b; /* Background */
+	background: #2e852b;
 	font-family: 'Titillium Web', sans-serif;
 	margin: 0;
 	padding:0;
@@ -61,7 +61,7 @@ input, textarea {
 	height: 100%;
 	padding: 5px 10px;
 	margin: 0px 5px 0px 5px;
-	background: none;
+	background-color: #1e5c1d;
 	background-image: none;
 	border: 1px solid #a0b3b0;
 	color: #fff;
@@ -87,7 +87,7 @@ nav {
 	align-content: right;
 	color: #7fcb7d;
 	padding:0px;
-	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3); /*Using rgba for ease of opacity*/
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 
 ul {
@@ -101,7 +101,15 @@ ul {
 .nav-left > li {
 	float: left;
 }
-
+form {
+	background: #27b023;
+	position: relative;
+	padding: 5px;
+	margin: 17px auto;
+	margin-right: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
 li a {
 	padding: 12px;
 	font-size: 15pt;
