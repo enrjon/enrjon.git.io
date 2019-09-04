@@ -51,7 +51,7 @@ h3 {
     color: #ff9292;
 	text-align: left;
 	float: left;
-
+	padding-left: 30px;
 }
 
 input, textarea {
@@ -108,14 +108,15 @@ ul {
 .nav-left > li a{
 	float: left;
 	font-size: 20pt;
-
+	padding: 0 10px;
 }
 form {
 	background: #27b023;
 	position: relative;
 	padding: 5px 15px;
 	width: auto;
-	border-bottom-left-radius: 10px;
+	border-radius: 10px;
+	margin: -10px -10px 0 0;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 .tab-content li a {
@@ -129,7 +130,8 @@ a[href="index.html"]:hover {
 	padding: 0 30px;
 }
 ul.nav-left > li > a:hover {
-	padding: 15px;
+	padding: 0 15px;
+	font-size: 22pt;
 }
 .active {
 	background: #27b023;
