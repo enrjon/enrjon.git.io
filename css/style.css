@@ -105,8 +105,10 @@ ul {
 	margin: 0px;
 	float: left;
 }
-.nav-left > li {
+.nav-left > li a{
 	float: left;
+	font-size: 20pt;
+
 }
 form {
 	background: #27b023;
@@ -116,7 +118,7 @@ form {
 	border-bottom-left-radius: 10px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
-li a {
+.tab-content li a {
 	padding: 12px;
 	font-size: 12pt;
 }
@@ -124,7 +126,7 @@ li a {
 	padding: 0px;
 }
 a[href="index.html"]:hover {
-	padding: 30px;
+	padding: 0 30px;
 }
 ul.nav-left > li > a:hover {
 	padding: 15px;
