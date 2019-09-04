@@ -59,11 +59,11 @@ input, textarea {
 	display: inline-block;
 	width: auto;
 	height: auto;
-	padding: 10px 10px;
+	padding: 5px 10px;
 	margin: auto 7px;
 	background-color: #1e5c1d;
 	background-image: none;
-	border: 1px solid #a0b3b0;
+	border: 0px solid #a0b3b0;
 	color: #fff;
 	border-radius: 0;
 }
@@ -81,8 +81,7 @@ textarea {
 nav {
 	background-color: #1e5c1d;
 	position:absolute;
-	margin: 0px;
-	display: inline-flex;
+	display: inline-block;
 	width: 100%;
 	/*column-count: 2;
 	align-content:center;*/
@@ -112,14 +111,14 @@ ul {
 form {
 	background: #27b023;
 	position: relative;
-	margin: 0px 0px 0px 0px;
+	padding: 5px 15px;
 	width: auto;
 	border-bottom-left-radius: 10px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 li a {
 	padding: 12px;
-	font-size: 15pt;
+	font-size: 12pt;
 }
 .nav-logo > a:first-child {
 	padding: 0px;
@@ -142,8 +141,9 @@ ul.nav-left > li > a:hover {
 	float: right;
 	clear: right;
 }
-.tabs {
-	margin: 0px 0px 0px 0px;
+.tab {
+	padding: 5px 0 5px 0;
+	border-radius: 0 0 10px 10px;
 }
 .nav-fields {
 	display: inline-flex;
