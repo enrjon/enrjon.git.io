@@ -3,6 +3,17 @@
 	-webkit-transition: .5s ease;
 	transition: .5s ease;
 }
+.foreg {
+	background: #05061f;
+	color: #3a69ea;
+}
+.backg {
+	background: `#eef3ff`;
+	color: #05061f;
+}
+.specg {
+	background: #4ab6ff;
+}
 html {
   width: auto;
   height: auto;
@@ -10,18 +21,15 @@ html {
   overflow-x: hidden;
 }
 body {
-	background: #2e852b;
 	font-family: 'Titillium Web', sans-serif;
 	margin: 0;
 	padding:0;
 	height: 100%;
 }
 nav {
-	background-color: #1e5c1d;
 	display: inline-block;
 	height: 10vh;
 	width: 100%;
-	color: #7fcb7d;
 	padding:0px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 	z-index: 1;
@@ -52,7 +60,34 @@ nav {
 }
 .hforms * {
     margin-left: auto;
-    float: left;
+	padding: 5px 10px;
+}
+.hforms form {
+	border-radius: 10px 10px 0 10px;
+}
+input {
+	font-size: 12pt;
+	display: inline-block;
+	width: auto;
+	height: auto;
+	padding: 5px 10px;
+	margin: auto 7px;
+	/*background-color: #4ab6ff;*/
+	background-image: none;
+	border: 1px solid #a0b3b0;
+	color: #fff;
+	border-radius: 0;
+}
+
+input:focus {
+	outline: 0;
+	border-color: #3a69ea;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: row;
+	border-radius: 0 0 10px 10px;
 }
 nav ul {
     padding: 0;
@@ -61,6 +96,7 @@ nav ul {
     position: relative;
     align-items:center;
     align-content:center;
+	margin: 0;
 }
 li {
     display: flex;
@@ -72,16 +108,28 @@ a {
 	color: #fff;
 }
 a:hover {
-	color: #7fcb7d;
+	color: #3a69ea;
 }
-
 .landing {
+	position: absolute;
 	height: 90vh;
+	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	opacity: 0.3;
-	z-index: 0;
+	z-index: -1;
+}
+
+.clip {
+	position: fixed;
+	background: #05061f;
+	width: 68%;
+	border-radius: 0px 3px 0px 0px;
+}
+.fill {
+	width: 34%;
+	border-radius:0;
 }
 @media screen and (max-width: 768px) {
 	html {
@@ -103,13 +151,12 @@ a:hover {
     }
     .clip {
         position: fixed;
-        background: #1e5c1d;
-        width: 20px;
+        background: #05061f;
+        width: 68%;
         border-radius: 0px 3px 0px 0px;
     }
     .fill {
-        height: 3px;
-        width: 10px;
+		width: 34%;
         border-radius:0;
     }
     .base-icon {
@@ -119,8 +166,7 @@ a:hover {
         border-radius: 4px 4px 0 4px;
     }
     nav {
-		position: relative;
-		height: relative;
+		position: absolute;
 	}
     .icon {
 		position: absolute;
@@ -139,8 +185,8 @@ a:hover {
     }
 
     .nav-left {
+		/*background: #05061f;*/
         position: fixed;
-		background: #1e5c1d;
         height: 10vh;
         width: 100%;
         flex-direction: column;
