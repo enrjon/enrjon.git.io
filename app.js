@@ -3,22 +3,23 @@ const navLeft = document.querySelector('.nav-left');
 const navTabs = document.querySelectorAll('.nav-tab a');
 
 const navFolder = document.querySelector('.folder');
-const navForms = document.querySelectorAll('.hforms');
+const navForms = document.querySelector('.hforms');
 
-if(icon){
-    icon.addEventListener("click", () => {
-        if(navLeft){
-            navLeft.classList.toggle("open");
-            var i;
-            for (i = 0; i < navTabs.length; i++) {
-              navTabs[i].classList.toggle("show");
-            }
-        } else if(navFolder){
-            navFolder.classList.toggle("open");
-        }
-    });
-}
-
+icon.addEventListener("click", () => {
+    navLeft.classList.toggle("open");
+    var i;
+    for (i = 0; i < navTabs.length; i++) {
+      navTabs[i].classList.toggle("show");
+    }
+});
+navFolder.addEventListener("click", () => {
+    navForms.classList.toggle("open");
+    var i;
+    for (i = 0; i < navForms.length; i++) {
+      navForms[i].classList.toggle("show");
+    }
+});
+// navigation form switching
 const hforms = document.querySelector('.tabs');
 var i=0, x , tabcontent, tablinks;
 tabcontent = document.querySelectorAll(".hforms form");

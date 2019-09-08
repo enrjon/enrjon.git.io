@@ -1,7 +1,7 @@
 *, *:before, *:after {
 	box-sizing: border-box;
-	-webkit-transition: .5s ease;
-	transition: .5s ease;
+	-webkit-transition: 300ms ease;
+	transition: 300ms ease;
 }
 .foreg {
 	background: #05061f;
@@ -15,10 +15,10 @@
 	background: #4ab6ff;
 }
 html {
-  width: auto;
-  height: auto;
-  overflow-y: scroll;
-  overflow-x: hidden;
+	width: auto;
+	height: auto;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 body {
 	font-family: 'Titillium Web', sans-serif;
@@ -34,6 +34,10 @@ nav {
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 	z-index: 1;
 }
+nav:hover {
+	height: 20vh;
+	transition: .75s ease;
+}
 .nav-left {
     width: 50%;
     justify-content: space-around;
@@ -43,7 +47,7 @@ nav {
 	float: left;
 }
 .nav-tab {
-	font-size: 20pt;
+	font-size: 1.75vw;
 }
 .nav-logo a {
     height: 10vh;
@@ -56,6 +60,8 @@ nav {
 .hforms {
     display: inline-flex;
     flex-direction: column;
+	flex-wrap:wrap;
+	align-items: flex-end; 
     width: 50%;
 }
 .hforms * {
@@ -63,39 +69,41 @@ nav {
 	padding: 5px 10px;
 }
 .hforms form {
+	position: relative;
+	padding: 2vh 2vw 5vh 2vw;
+	width: auto;
 	border-radius: 10px 10px 0 10px;
+	margin: 5px -10px 0 0;
+	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 #login {
 	display: none;
 }
 input {
-	font-size: 12pt;
 	display: inline-block;
+	font-size: 0.75vw;
 	width: auto;
 	height: auto;
-	padding: 5px 10px;
-	margin: auto 7px;
-	/*background-color: #4ab6ff;*/
-	background-image: none;
+	background-color: #8888;
 	border: 1px solid #a0b3b0;
 	color: #fff;
 	border-radius: 0;
 }
-
 input:focus {
-	outline: 0;
+	outline: 1px;
 	border-color: #3a69ea;
 }
 
 .tabs {
+	font-size: 1vw;
 	display: flex;
 	flex-direction: row;
 	border-radius: 0 0 10px 10px;
-	padding-left: 10%;
+	padding-left: 3vw;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 200%, 25% 100%);
 }
 .tab .active {
-	color: #0000;
+	background: #0000;
 }
 nav ul {
     padding: 0;
@@ -119,7 +127,7 @@ a:hover {
 	color: #3a69ea;
 }
 .landing {
-	position: absolute;
+	position: fixed;
 	height: 90vh;
 	width: 100%;
 	display: flex;
@@ -127,85 +135,4 @@ a:hover {
 	align-items: center;
 	opacity: 0.3;
 	z-index: -1;
-}
-
-@media screen and (max-width: 768px) {
-	html {
-		display: flex;
-	}
-    .line {
-		width: 30px;
-		height: 3px;
-		background: white;
-		margin: 5px;
-	}
-    .tab-icon {
-        width: 10px;
-        height: 4px;
-        background: white;
-        margin-top: 0px;
-        border-radius: 0px 0px 3px 3px;
-        float: right;
-    }
-    .clip {
-        position: fixed;
-        background: #05061f;
-        width: 68%;
-        border-radius: 0px 3px 0px 0px;
-    }
-    .fill {
-		width: 34%;
-        border-radius:0;
-    }
-    .base-icon {
-        width: 30px;
-        height: 20px;
-        background: white;
-        border-radius: 4px 4px 0 4px;
-    }
-    nav {
-		position: absolute;
-	}
-    .icon {
-		position: absolute;
-		cursor: pointer;
-		z-index: 2;
-	}
-    .hamburger {
-        left: 5%;
-		top: 50%;
-		transform: translate(-5%, -50%);
-    }
-    .folder {
-        right: 5%;
-		top: 50%;
-		transform: translate(-5%, -50%);
-    }
-
-    .nav-left {
-		/*background: #05061f;*/
-        position: fixed;
-        height: 10vh;
-        width: 100%;
-        flex-direction: column;
-        clip-path: circle(45px at 50% 20%);
-		-webkit-clip-path: circle(45px at 50% 60%);
-		transition: all 300ms ease-in;
-    }
-    .nav-tab a {
-        font-size: 0pt;
-    }
-    .nav-left.open {
-        height: 100vh;
-		justify-content: space-around;
-        clip-path: circle(1000px at 50% 22%);
-		-webkit-clip-path: circle(1000px at 50% 22%);
-	}
-    .nav-tab a.show {
-        font-size: 20pt;
-    }
-
-    .hforms {
-        display: none;
-    }
 }

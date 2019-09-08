@@ -1,0 +1,89 @@
+
+@media screen and (max-width: 768px) {
+	html {
+		display: flex;
+	}
+    .line {
+		width: 30px;
+		height: 3px;
+		background: white;
+		margin: 5px;
+	}
+    .tab-icon {
+        width: 10px;
+        height: 4px;
+        background: white;
+        margin-top: 0px;
+        border-radius: 0px 0px 3px 3px;
+        float: right;
+    }
+    .clip {
+        position: fixed;
+        background: #05061f;
+        width: 68%;
+        border-radius: 0px 3px 0px 0px;
+    }
+    .fill {
+		width: 34%;
+        border-radius:0;
+    }
+    .base-icon {
+        width: 30px;
+        height: 20px;
+        background: white;
+        border-radius: 4px 4px 0 4px;
+    }
+    nav {
+		position: fixed;
+	}
+    .icon {
+		position: absolute;
+		cursor: pointer;
+		z-index: 2;
+	}
+    .hamburger {
+        left: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+    }
+    .folder {
+        right: 5%;
+		top: 50%;
+		transform: translate(-5%, -50%);
+    }
+
+    .nav-left {
+		background: #05061f;
+        position: fixed;
+        height: 10vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(45px at 50% 20%);
+		-webkit-clip-path: circle(45px at 50% 60%);
+		transition: all 300ms ease-in;
+    }
+    .nav-tab a {
+        font-size: 0pt;
+    }
+    .nav-left.open {
+        height: 100vh;
+		justify-content: space-around;
+        clip-path: circle(1000px at 50% 22%);
+		-webkit-clip-path: circle(1000px at 50% 22%);
+	}
+    .nav-tab a.show {
+        font-size: 20pt;
+    }
+
+    .hforms {
+		background: #05061f;
+        clip-path: circle(45px at 50% 20%);
+		-webkit-clip-path: circle(45px at 50% 60%);
+		transition: all 300ms ease-in;
+    }
+	.hforms.open{
+		display: initial;
+		clip-path: circle(1000px at 50% 22%);
+		-webkit-clip-path: circle(1000px at 50% 22%);
+	}
+}
