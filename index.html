@@ -28,16 +28,18 @@
                     <div class="tab-icon fill"></div>
                 </div>
                 <div class="hforms">
-                    <form class="specg" method="post">
+                    <form id ="register" class="specg" method="post">
                         <input type="text" required autocomplete="on" name="name" placeholder="* Name"/>
                         <input type="email" required autocomplete="off" name="email" placeholder="* Email Address..."/>
                         <input type="password" required autocomplete="off" name="password" placeholder="* Choose A Password"></input>
-                        <p>
-                            <a href="forgot.html">Forgot Password?</a>
-                        </p>
+                    </form>
+                    <form id ="login" class="specg" method="post">
+                        <input type="email" required autocomplete="off" name="email" placeholder="* Email Address..."/>
+                        <input type="password" required autocomplete="off" name="password" placeholder="* Choose A Password"></input>
+                        <p><a href="forgot.html">Forgot Password?</a></p>
                     </form>
                     <ul class="tabs specg">
-                        <li class="tab active"><a href="#register">Register</a></li>
+                        <li class="tab"><a href="#register">Register</a></li>
                         <li class="tab"><a href="#login">Log In</a></li>
                     </ul>
                 </div>

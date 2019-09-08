@@ -65,6 +65,9 @@ nav {
 .hforms form {
 	border-radius: 10px 10px 0 10px;
 }
+#login {
+	display: none;
+}
 input {
 	font-size: 12pt;
 	display: inline-block;
@@ -88,6 +91,11 @@ input:focus {
 	display: flex;
 	flex-direction: row;
 	border-radius: 0 0 10px 10px;
+	padding-left: 10%;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 200%, 25% 100%);
+}
+.tab .active {
+	color: #0000;
 }
 nav ul {
     padding: 0;
@@ -121,16 +129,6 @@ a:hover {
 	z-index: -1;
 }
 
-.clip {
-	position: fixed;
-	background: #05061f;
-	width: 68%;
-	border-radius: 0px 3px 0px 0px;
-}
-.fill {
-	width: 34%;
-	border-radius:0;
-}
 @media screen and (max-width: 768px) {
 	html {
 		display: flex;
