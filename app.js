@@ -16,24 +16,29 @@ if(icon){
         } else if(navFolder){
             navFolder.classList.toggle("open");
         }
-
     });
 }
 
 const hforms = document.querySelector('.tabs');
+var i=0, x , tabcontent, tablinks;
+tabcontent = document.querySelectorAll(".hforms form");
+tablinks = document.getElementsByClassName("tab");
 
-hforms.addEventListener("click", () => {
-    var i, tabcontent, tablinks;
-    tabcontent = document.querySelectorAll(".hforms form");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-        console.log(tabcontent[i].id);
-    }
-    tablinks = document.getElementsByClassName("tab");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(tabcontent[1].id).style.display = "block";
-    event.currentTarget.className += " active";
-
+tablinks[0].addEventListener("click", () => {
+    console.log(tablinks[0].classList);
+    tabcontent[0].style.display = "initial";
+    tabcontent[1].style.display = "none";
 });
+tablinks[1].addEventListener("click", () => {
+    console.log(tablinks[1].classList);
+    tabcontent[0].style.display = "none";
+    tabcontent[1].style.display = "initial";
+});
+/* for(i=0; i < tablinks.length; i++){
+    x = i==!0 ? 1 : 0;
+    console.log(x);
+    tablinks[i].addEventListener("click", () => {
+        tabcontent[i].style.display = "initial";
+        tabcontent[x].style.display = "none";
+    });
+} */
