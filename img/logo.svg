@@ -8,11 +8,13 @@
       <style id="style1">
           text {
             transform: rotate(22deg) skewY(-20deg);
+            font-size:300pt;
+            font-family:'Titillium Web', sans-serif;
             }
       </style>
     </defs>
-    <circle cx="250" cy="250" r="230" stroke="url(#grad1)" stroke-width="8" fill="none" />
-    <circle cx="250" cy="250" r="130" stroke="url(#grad1)" stroke-width="5" fill="none" />
-    <text class="style1" fill="url(#grad1)" font-size="400" font-family="Sans-serif" x="175" y="310">L</text>
-    <text class="style1" fill="url(#grad1)" font-size="400" font-family="Sans-serif" x="275" y="450">L</text>
+    <circle cx="250" cy="250" r="230" stroke="url(#grad1)" stroke-width="8" fill="none"/>
+    <circle id="c1" cx="250" cy="250" r="130" stroke="url(#grad1)" stroke-width="5" fill="none"/>
+    <text class="style1" fill="url(#grad1)"  x="125" y="310">E</text>
+    <text class="style1" fill="url(#grad1)" x="315" y="510">P</text>
   </svg>
