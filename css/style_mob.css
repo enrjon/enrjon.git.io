@@ -36,6 +36,10 @@
     nav {
 		position: fixed;
 	}
+    nav:hover {
+    	height: 10vh;
+    	transition: .75s ease;
+    }
     .icon {
 		position: absolute;
 		cursor: pointer;
@@ -76,14 +80,18 @@
     }
 
     .hforms {
+        padding: 20vh 4vw;
+        height: 100vh;
+        width: 100%;
+        position: relative;
 		background: #05061f;
-        clip-path: circle(45px at 50% 20%);
-		-webkit-clip-path: circle(45px at 50% 60%);
+        clip-path: circle(45px at 100% 0%);
+		-webkit-clip-path: circle(45px at 100% 0%);
 		transition: all 300ms ease-in;
     }
-	.hforms.open{
-		display: initial;
-		clip-path: circle(1000px at 50% 22%);
-		-webkit-clip-path: circle(1000px at 50% 22%);
+	.hforms.open {
+        transform: none;
+        clip-path: circle(200vh at 100% 0%);
+        -webkit-clip-path: circle(200vh at 100% 0%);
 	}
 }

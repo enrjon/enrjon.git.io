@@ -27,7 +27,7 @@ body {
 	height: 100%;
 }
 nav {
-	display: inline-block;
+	display: inline-flex;
 	height: 10vh;
 	width: 100%;
 	padding:0px;
@@ -60,30 +60,31 @@ nav:hover {
 .hforms {
     display: inline-flex;
     flex-direction: column;
-	flex-wrap:wrap;
-	align-content: flex-end;
-    width: 50%;
+	align-items: flex-end;
+    width: 20vw;
+	margin-left: auto;
 }
-.hforms > * {
-    margin-left: auto;
-	padding: 1vh 2vw;
+.hforms:hover > * {
+
 }
 .hforms form {
 	position: relative;
-	padding: 2vh 2vw 3vh 2vw;
-	width: auto;
+	display: inline-block;
+	height: 40vh;
+	float: left;
+	clear: right;
+	padding: 1vh 1vw 0 0;
 	border-radius: 10px 10px 0 10px;
-	margin: 5px -10px auto auto;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 }
 #register {
 	display: none;
 }
 input {
-	display: inline-block;
-	font-size: 0.75vw;
-	width: auto;
-	height: auto;
+	font-size: 1.7vh;
+	padding: 0.5vh 1vw;
+	float: right;
+	margin: 1vh;
 	background-color: #8888;
 	border: 1px solid #a0b3b0;
 	color: #fff;
@@ -93,14 +94,17 @@ input:focus {
 	outline: 1px;
 	border-color: #3a69ea;
 }
-
+.forgot {
+	float: right;
+}
 .tabs {
-	font-size: 1vw;
+	height: 15vh;
+	width: 50%;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	padding-left: 10%;
 	border-radius: 0 0 10px 10px;
-	padding: 1vh 3vw;
-	margin: 0vh 0vh 1vw 6vw;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 200%, 25% 100%);
 }
 .tab .active {
@@ -126,6 +130,9 @@ a {
 }
 a:hover {
 	color: #3a69ea;
+}
+p {
+	margin: 0;
 }
 .landing {
 	position: fixed;
