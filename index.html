@@ -7,8 +7,9 @@
       <title>Base Site by Pinedo</title>
       <link rel="stylesheet" href="css/style.css"></link>
        <link rel="stylesheet" href="css/style_mob.css"></link>
+       <link rel="stylesheet" href="css/resume.css"></link>
     </head>
-    <body class="backg">
+    <body>
         <header>
             <nav class="foreg">
                 <div class="icon hamburger">
@@ -18,36 +19,49 @@
                 </div>
                 <ul class="nav-left">
                     <li class="nav-logo"><a href="index.html"><img src = "img/logo.svg" alt = "img/logo.png"></a></li>
-                    <li class="nav-tab"><a href = "">Dashboard</a></li>
-                    <li class="nav-tab"><a href = "">Map</a></li>
-                    <li class="nav-tab"><a href = "">Settings</a></li>
+                    <li class="nav-tab"><a href = "#resume">Resume</a></li>
+                    <li class="nav-tab"><a href = "#portfolio">Portfolio</a></li>
+                    <li class="nav-tab"><a href = "#contact">Contact</a></li>
                 </ul>
-                <div class="icon folder">
+                <div class="icon gear">
                     <div class="base-icon"></div>
                     <div class="tab-icon clip"></div>
                     <div class="tab-icon"></div>
                     <div class="tab-icon fill"></div>
                 </div>
-                <div class="hforms">
-                    <form id ="register" class="specg" method="post">
-                        <input type="text" required autocomplete="on" name="name" placeholder="* Name"/>
-                        <input type="email" required autocomplete="off" name="email" placeholder="* Email Address..."/>
-                        <input type="password" required autocomplete="off" name="password" placeholder="* Choose A Password">
-                    </form>
-                    <form id ="login" class="specg" method="post">
-                        <input type="email" required autocomplete="off" name="email" placeholder="* Email Address..."/>
-                        <input type="password" required autocomplete="off" name="password" placeholder="* Choose A Password">
-                        <p class="forgot"><a href="forgot.html">Forgot Password?</a></p>
-                    </form>
-                    <ul class="tabs specg">
-                        <li class="tab active"><a href="#register">Register</a></li>
-                        <li class="tab"><a href="#login">Log In</a></li>
-                    </ul>
-                </div>
+
             </nav>
         </header>
-        <section class="landing">
-            <img src="img/logo.svg" alt="img/logo_big.png"/>
+        <section class="backg landing"></section>
+        <section>
+            <div class="overviews">
+                <div class="chunk">
+                    --Resume--
+                </div>
+                <img class="oImg" src="img/logo.svg" alt="" width="15%">
+            </div>
+            <div class="overviews">
+                <img class="oImg" src="img/logo.svg" alt="" width="15%">
+                <div class="chunk">
+                    ---Porfolio--
+                </div>
+            </div>
+            <div class="overviews">
+                <div class="chunk">
+                    --Contact--
+                </div>
+                <img class="oImg" src="img/logo.svg" alt="" width="15%">
+
+            </div>
+        </section>
+        <section id="resume">
+            <div class="placeholder">resume</div>
+        </section>
+        <section id="portfolio">
+            <div class="placeholder">portfolio</div>
+        </section>
+        <section id="contact">
+            <div class="placeholder">contact</div>
         </section>
         <footer></footer>
         <script src="app.js"></script>

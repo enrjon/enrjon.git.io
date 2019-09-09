@@ -1,0 +1,20 @@
+.overviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.overviews > div, .overviews > img {
+    margin: auto;
+    padding: 10vh 0;
+}
+.oImg {
+}
+.chunk {
+    text-align: center;
+    width: 50%;
+}
+.chunk#text {
+    width: 50%;
+    flex-wrap: wrap;
+}
