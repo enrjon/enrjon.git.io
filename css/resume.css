@@ -1,20 +1,35 @@
-.overviews {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.content {
+    display: block;
+    height: 100%;
     width: 100%;
+    color: black;
+    padding: 5vh 10vw;
+    overflow-y: scroll;
 }
-.overviews > div, .overviews > img {
-    margin: auto;
-    padding: 10vh 0;
+.content > div {
+    margin: 5vh 0;
+    padding: 5vh 2vw;
 }
-.oImg {
+.job {
+    display: inline-block;
 }
-.chunk {
-    text-align: center;
-    width: 50%;
+.job-head {
+    display: flex;
+    flex-direction: row;
+    columns: 4;
 }
-.chunk#text {
-    width: 50%;
-    flex-wrap: wrap;
+
+section a {
+    color: black;
 }
+.folder {
+    display: inline-block;
+}
+.folder h3{
+    display: inline-block;
+    justify-content: space-around;
+}
+.skills {}
+.skill {}
+.bullet {}

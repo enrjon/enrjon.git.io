@@ -17,7 +17,7 @@
 html {
 	width: auto;
 	height: auto;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	overflow-x: hidden;
 }
 body {
@@ -36,7 +36,7 @@ nav {
 	z-index: 1;
 }
 nav:hover {
-	height: 20vh;
+	height: 12vh;
 	transition: .75s ease;
 }
 .nav-left {
@@ -51,8 +51,7 @@ nav:hover {
 	font-size: 1.75vw;
 }
 .nav-logo a {
-    height: 10vh;
-    width: auto;
+    display: contents;
 }
 .nav-logo a img {
     height: 8vh;
@@ -129,26 +128,38 @@ a:hover {
 p {
 	margin: 0;
 }
+
+ section {
+	position: fixed;
+ 	height: 100%;
+ 	width: 100%;
+ 	display: block;
+ 	justify-content: space-around;
+ 	align-items: center;
+}
+.overviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.overviews > div, .overviews > img {
+    margin: auto;
+    padding: 10vh 0;
+}
+.chunk {
+    text-align: center;
+    width: 50%;
+}
+.chunk#text {
+    width: 50%;
+    flex-wrap: wrap;
+}
+
 .landing {
 	background-image: url("../img/logo.svg");
 	background-repeat: no-repeat;
 	background-position: center;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	display: block;
-	justify-content: space-around;
-	align-items: center;
 	opacity: 0.2;
 	z-index: -1;
-}
-
-.placeholder {
-	margin: 10vh 10vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-    justify-content: center;
-	background-color: rgba(120, 120, 120, 0.85);
-	border-radius: 20px;
 }
