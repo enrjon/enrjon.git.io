@@ -17,22 +17,6 @@
         border-radius: 0px 0px 3px 3px;
         float: right;
     }
-    .clip {
-        position: fixed;
-        background: #05061f;
-        width: 68%;
-        border-radius: 0px 3px 0px 0px;
-    }
-    .fill {
-		width: 34%;
-        border-radius:0;
-    }
-    .base-icon {
-        width: 30px;
-        height: 20px;
-        background: white;
-        border-radius: 4px 4px 0 4px;
-    }
     nav {
 		position: fixed;
 	}
@@ -50,10 +34,22 @@
 		top: 50%;
 		transform: translate(-5%, -50%);
     }
-    .gear {
-        right: 5%;
+
+
+
+
+
+
+
+
+
+    .gear img {
+		right: 5%;
 		top: 50%;
-		transform: translate(-5%, -50%);
+        height: 10vh;
+		background: white;
+		clip-path: circle(50%);
+		transform: scale(0.5);
     }
 
     .nav-left {
@@ -79,7 +75,7 @@
         font-size: 20pt;
     }
 
-    .hforms {
+    .hforms:not(*img) {
         padding: 20vh 4vw;
         height: 100vh;
         width: 100%;

@@ -8,8 +8,8 @@
       <style id="style1">
           text {
             transform: rotate(22deg) skewY(-20deg);
-            font-size:300pt;
-            font-family:'Titillium Web', sans-serif;
+            font-size: 300pt;
+            font-family: 'Titillium Web', sans-serif;
             }
       </style>
     </defs>
