@@ -34,24 +34,6 @@
 		top: 50%;
 		transform: translate(-5%, -50%);
     }
-
-
-
-
-
-
-
-
-
-    .gear img {
-		right: 5%;
-		top: 50%;
-        height: 10vh;
-		background: white;
-		clip-path: circle(50%);
-		transform: scale(0.5);
-    }
-
     .nav-left {
 		background: #05061f;
         position: fixed;
@@ -75,19 +57,4 @@
         font-size: 20pt;
     }
 
-    .hforms:not(*img) {
-        padding: 20vh 4vw;
-        height: 100vh;
-        width: 100%;
-        position: relative;
-		background: #05061f;
-        clip-path: circle(45px at 100% 0%);
-		-webkit-clip-path: circle(45px at 100% 0%);
-		transition: all 300ms ease-in;
-    }
-	.hforms.open {
-        transform: none;
-        clip-path: circle(200vh at 100% 0%);
-        -webkit-clip-path: circle(200vh at 100% 0%);
-	}
 }
