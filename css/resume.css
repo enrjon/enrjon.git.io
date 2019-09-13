@@ -1,15 +1,19 @@
-
+section * {
+    padding-inline-start: 0;
+}
+section.content {
+    overflow-y: scroll;
+}
 .content {
     display: block;
     height: 100%;
     width: 100%;
     color: black;
-    padding: 5vh 10vw;
-    overflow-y: scroll;
+    padding: 5vh 5vw;
 }
-.content > div {
-    margin: 5vh 0;
-    padding: 5vh 2vw;
+section.content > div {
+    margin: 2vh 10vw;
+    padding:1vh 2vw 3vh 2vw;
 }
 .job {
     display: inline-block;
@@ -24,12 +28,35 @@ section a {
     color: black;
 }
 .folder {
-    display: inline-block;
+    display: block;
 }
-.folder h3{
+
+h3 {
+    width: 100%;
     display: inline-block;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.skills {}
-.skill {}
-.bullet {}
+.proj {
+    border-radius: 5px;
+}
+.folder ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.folder .content:not(.active) {
+    display: none;
+}
+.folder .content ul {
+    justify-content: space-between;
+}
+.g1 {
+    font-size: larger;
+}
+.g2 {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.g2 p {
+    width: 50%;
+    text-indent: 2vw;
+}
