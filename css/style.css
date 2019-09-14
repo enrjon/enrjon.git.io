@@ -4,15 +4,15 @@
 	transition: 300ms ease;
 }
 .foreg {
-	background: #05061f;
+	background: #000000;
 	color: #3a69ea;
 }
 .backg {
-	background: #eef3ff;
+	background: rgba(43, 42, 47, 1);
 	color: #05061f;
 }
 .specg {
-	background: rgb(5, 99, 144);
+	background: rgb(33, 37, 38);
 }
 html {
 	width: auto;
@@ -21,24 +21,20 @@ html {
 	overflow-x: hidden;
 }
 body {
-	font-family: 'Titillium Web', sans-serif;
+	font-family: Verdana,sans-serif;
 	display: block;
 	margin: 0;
 	padding: 0;
 	height: 100%;
 }
 nav {
-	display: inline-flex;
 	height: 10vh;
 	width: 100%;
 	padding:0px;
 	box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
 	z-index: 1;
 }
-nav:hover {
-	height: 12vh;
-	transition: .75s ease;
-}
+
 .nav-left {
     width: 50%;
     justify-content: space-around;
@@ -101,8 +97,8 @@ input:focus {
 	border-radius: 0 0 10px 10px;
 	clip-path: polygon(0% 0%, 100% 0%, 100% 200%, 25% 100%);
 }
-.tab .active {
-	background: #0000;
+.active {
+	background-color: rgba(255, 255, 255, 0.4);
 }
 nav ul {
     padding: 0;
@@ -123,7 +119,7 @@ a {
 	color: #fff;
 }
 a:hover {
-	color: #3a69ea;
+	color: rgb(106, 106, 106);
 }
 p {
 	margin: 0;
@@ -162,7 +158,8 @@ p {
 
 .folder ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
+	align-self: flex-end;
 }
 .folder .content:not(.active) {
     display: none;
@@ -170,10 +167,18 @@ p {
 .folder .content ul {
     justify-content: space-between;
 }
+.landingHead {
+	mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 5%, transparent 90%);
+	-webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 5%, transparent 90%);
+	height: 100vh;
+	width: auto;
+}
 .landing {
-	background-image: url("../img/logo.svg");
-	background-repeat: no-repeat;
+	background-image: url('../img/circle.svg'),
+	linear-gradient(to bottom, transparent 56%, rgb(0, 0, 0) 90%);
+	background-size: 2vh;
+	background-repeat: repeat;
 	background-position: center;
-	opacity: 0.2;
+	opacity: 1;
 	z-index: -1;
 }
