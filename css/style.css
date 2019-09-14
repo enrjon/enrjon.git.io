@@ -175,7 +175,8 @@ p {
 }
 .landing {
 	background-image: url('../img/circle.svg'),
-	linear-gradient(to bottom, transparent 56%, rgb(0, 0, 0) 90%);
+	linear-gradient(to bottom, transparent 56%, rgb(0, 0, 0) 90%),
+	radial-gradient(circle, white, transparent);
 	background-size: 2vh;
 	background-repeat: repeat;
 	background-position: center;
