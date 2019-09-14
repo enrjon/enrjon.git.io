@@ -156,6 +156,20 @@ p {
     flex-wrap: wrap;
 }
 
+.folder {
+    display: block;
+}
+
+.folder ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.folder .content:not(.active) {
+    display: none;
+}
+.folder .content ul {
+    justify-content: space-between;
+}
 .landing {
 	background-image: url("../img/logo.svg");
 	background-repeat: no-repeat;

@@ -3,6 +3,8 @@ section * {
 }
 section.content {
     overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 10vh;
 }
 .content {
     display: block;
@@ -12,42 +14,24 @@ section.content {
     padding: 5vh 5vw;
 }
 section.content > div {
-    margin: 2vh 10vw;
-    padding:1vh 2vw 3vh 2vw;
-}
-.job {
-    display: inline-block;
-}
-.job-head {
-    display: flex;
-    flex-direction: row;
-    columns: 4;
-}
 
+}
 section a {
     color: black;
 }
-.folder {
-    display: block;
+h1 {
+    font-size: 30pt;
+    text-align: center;
 }
-
-h3 {
+h2 {
     width: 100%;
     display: inline-block;
     justify-content: space-between;
 }
 .proj {
     border-radius: 5px;
-}
-.folder ul {
-    display: flex;
-    justify-content: space-evenly;
-}
-.folder .content:not(.active) {
-    display: none;
-}
-.folder .content ul {
-    justify-content: space-between;
+    margin: 2vh 10vw;
+    padding:1vh 2vw 3vh 2vw;
 }
 .g1 {
     font-size: larger;
@@ -59,4 +43,42 @@ h3 {
 .g2 p {
     width: 50%;
     text-indent: 2vw;
+}
+
+.job {
+    display: inline-block;
+    margin: 2vh 0vw;
+    width:100%;
+    padding: 16vh 15vw 8vh 15vw;
+    clip-path: url("#wave");
+}
+li {
+    padding: 2vh 0vw;
+}
+.invert > *:not(.duties) {
+    margin-left: auto;
+    text-align: end;
+}
+.job-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+    font-style: italic;
+}
+
+.overlist {
+    display: block;
+}
+.skills {
+    text-align: center;
+    padding: 2vh 5vw;
+    border-radius: 0px 0px 1000px 1000px;
+}
+.overlist ul {
+    justify-content: space-evenly;
+    display: flex;
+    width: 100%;
+}
+.overlist li {
 }
