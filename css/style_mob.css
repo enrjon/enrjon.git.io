@@ -64,7 +64,13 @@
 	}
 
 	.folder ul {
-		display: block;
+		/*display: block;*/
 	}
-
+	.folder > ul {
+	    margin-left: 4vw;
+	}
+	.projTabs > li > a {
+		width: -webkit-fill-available;
+		text-align: center;
+	}
 }

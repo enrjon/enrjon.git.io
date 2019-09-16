@@ -97,16 +97,13 @@ li {
 }
 
 .folder > ul {
-    margin: 0 2vw 0 2vw;
+    margin: 0 2vw 0 4vw;
 }
 .overlist ul {
     justify-content: space-evenly;
     display: flex;
     width: 100%;
 }
-.overlist li {
-}
-
 .lang, .edu {
     text-align: center;
 }
