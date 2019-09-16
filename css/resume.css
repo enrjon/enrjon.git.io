@@ -12,7 +12,7 @@ section.content {
     height: 100%;
     width: 100%;
     color: rgb(255, 255, 255);
-    padding: 5vh 5vw;
+    padding: 2vh 5vw 15vh 5vw;
 }
 
 .content > div {
@@ -55,6 +55,10 @@ h2 {
 
     clip-path: url("#tab");
 }
+
+.g2 {
+    padding: 1vh 2vw;
+}
 .projTabs > li > a:not(.active) {
     background: rgba(255, 255, 255, 0.2);
 }
@@ -79,7 +83,7 @@ h2 {
     clip-path: url("#wave");
 }
 li {
-    padding: 2vh 0vw;
+    padding: 2vh 1vw;
 }
 .invert > *:not(.duties) {
     margin-left: auto;
@@ -99,6 +103,7 @@ li {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 0;
     clip-path: polygon(0 0, 100% 0, 95% 100%, 05% 100%);
+    padding: 0 3vw;
 }
 .skills {
     text-align: center;
@@ -110,7 +115,7 @@ li {
     border-radius: 0;
     background: rgba(255, 255, 255, 0.4);
     margin: 0 0 -1vh 0;
-    padding: 5vh 0vw;
+    padding: 3vh 0vw;
     clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);
 }
 
@@ -125,6 +130,19 @@ li {
 }
 .lang, .edu {
     text-align: center;
-    width: 50%;
+    height: auto;
+    padding: 0 0 3vh 0;
+    width: 40%;
     float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.lang > ul {
+    display: inline-flex;
+    width: -webkit-fill-available;
+    justify-content: space-around;
+}
+
+.edu {
+
 }
