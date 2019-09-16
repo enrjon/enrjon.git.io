@@ -14,6 +14,13 @@ section.content {
     color: rgb(255, 255, 255);
     padding: 5vh 5vw;
 }
+
+.content > div {
+    border: rgb(31, 5, 5) 1px;
+    border-style: solid;
+    background-image: linear-gradient(to bottom, transparent 94%, rgb(31, 5, 5) 118%);
+}
+
 section a {
     color: rgb(255, 255, 255);
 }
@@ -89,21 +96,35 @@ li {
 
 .overlist {
     display: block;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 05% 100%);
 }
 .skills {
     text-align: center;
     padding: 2vh 5vw;
     border-radius: 0px 0px 0px 0px;
+    flex-flow: wrap;
+}
+.skills > h2 {
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 0 0 -1vh 0;
+    padding: 5vh 0vw;
+    clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);
 }
 
 .folder > ul {
-    margin: 0 2vw 0 4vw;
+    margin: 0 1vw 0 4vw;
 }
 .overlist ul {
     justify-content: space-evenly;
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 .lang, .edu {
     text-align: center;
+    width: 50%;
+    float: left;
 }
