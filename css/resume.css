@@ -14,7 +14,6 @@ section.content {
     color: rgb(255, 255, 255);
     padding: 5vh 5vw;
 }
-
 section a {
     color: rgb(255, 255, 255);
 }
@@ -41,13 +40,18 @@ h2 {
 .projTabs, .projTabs > li {
     margin-block-end: 0;
     padding: 0;
+    margin-left: -2vw;
 }
-.projTabs > li > a{
-    padding: 1vh 2.5vw;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.projTabs > li > a {
+    padding: 2vh 2vw;
+    border-radius: 0;
+
+    clip-path: url("#tab");
+}
+.projTabs > li > a:not(.active) {
     background: rgba(255, 255, 255, 0.2);
 }
+
 .g1 {
     font-size: larger;
 }
@@ -66,9 +70,6 @@ h2 {
     width:100%;
     padding: 16vh 15vw 8vh 15vw;
     clip-path: url("#wave");
-}
-.job > ul {
-    list-style:georgian;
 }
 li {
     padding: 2vh 0vw;
@@ -94,10 +95,18 @@ li {
     padding: 2vh 5vw;
     border-radius: 0px 0px 0px 0px;
 }
+
+.folder > ul {
+    margin: 0 2vw 0 2vw;
+}
 .overlist ul {
     justify-content: space-evenly;
     display: flex;
     width: 100%;
 }
 .overlist li {
+}
+
+.lang, .edu {
+    text-align: center;
 }

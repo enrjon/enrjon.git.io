@@ -6,10 +6,9 @@ const np = document.querySelectorAll('.folder ul a')[3];
 
 var showToggle = function(event){
     for(i of projTabs){
-
-        i.classList.remove('active');
         var hide = document.getElementById(i.text);
         hide.classList.remove('active');
+        i.classList.remove('active');
     }
 }
 ss.addEventListener("click", () => {

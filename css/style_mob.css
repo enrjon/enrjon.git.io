@@ -44,8 +44,9 @@
 		-webkit-clip-path: circle(45px at 50% 60%);
 		transition: all 300ms ease-in;
     }
-    .nav-tab a {
-        font-size: 0pt;
+    .nav-tab a,  .nav-tab {
+		font-size: 0;
+        height: 0;
     }
     .nav-left.open {
         height: 100vh;
@@ -56,5 +57,14 @@
     .nav-tab a.show {
         font-size: 20pt;
     }
+
+	div.proj {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.folder ul {
+		display: block;
+	}
 
 }
