@@ -171,10 +171,14 @@ p {
     justify-content: space-between;
 }
 .landingHead {
-	mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 5%, transparent 90%);
-	-webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 5%, transparent 90%);
+	mask-image: linear-gradient(to top, rgb(0, 0, 0) 5%, transparent 90%);
+	-webkit-mask-image: linear-gradient(to top, rgb(0, 0, 0) 5%, transparent 90%);
 	height: 100vh;
 	width: auto;
+}
+.blank {
+	background: radial-gradient(121vh at 50% 0%, white 50vh, black);
+	/*background: radial-gradient(143vh at 30% 0%, white 93vh, black);*/
 }
 .landing {
 	background-image: url('../img/circle.svg'),
@@ -195,7 +199,7 @@ footer {
 	padding: 1vh;
 }
 footer > div {
-	width: 25%;
+	width: 50%;
     text-align-last: justify;
 }
 footer > div > a:hover {
