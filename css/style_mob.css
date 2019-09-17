@@ -35,7 +35,8 @@
 		transform: translate(-5%, -50%);
     }
     .nav-left {
-		background: rgb(31, 5, 5);
+		/*background: rgb(31, 5, 5);*/
+		background: rgba(0, 0, 0, 0.8);
         position: fixed;
         height: 10vh;
         width: 100%;
@@ -55,9 +56,13 @@
 		-webkit-clip-path: circle(1000px at 50% 22%);
 	}
     .nav-tab a.show {
+		height: auto;
         font-size: 20pt;
+		padding: 6vh 50vw;
     }
-
+	.nav-left.open .nav-logo a img {
+		height: 15vh;
+	}
 	div.proj {
 		margin-left: 0;
 		margin-right: 0;

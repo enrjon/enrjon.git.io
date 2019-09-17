@@ -25,6 +25,7 @@ section a {
     color: rgb(255, 255, 255);
 }
 h1 {
+    padding-top: 2vh;
     margin: 6vh -10vw;
     font-size: 30pt;
     text-align: center;
