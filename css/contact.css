@@ -5,12 +5,30 @@
 }
 
  .contact-item {
+    margin-left: 10vw;
+    width: 30%;
     place-content: space-between;
-    width: 50%;
+}
+
+ .contact-item:first-child > a {
+    background-image: url(../img/LI-In-Bug.png);
+    background-size: 10vh;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 a > .profile-pic {
     height: 15vh;
     width: auto;
-    clip-path: circle(40% at 50%);
+    clip-path: circle(0% at 50%);
+}
+a:hover > .profile-pic {
+    height: 15vh;
+    width: auto;
+    clip-path: circle(50% at 50%);
+
+}
+a:hover {
+    background: none;
+    background-image: none;
 }
