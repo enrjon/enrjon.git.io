@@ -1,21 +1,30 @@
+section .contact {
+
+}
 .contact {
-    width: 70%;
-    margin: 20vh 10vw;
-    padding: 4vh 4vw;
+    margin: 15vh 0vw;
+    padding: 4vh 20vw;
 }
 
  .contact-item {
     margin-left: 10vw;
-    width: 30%;
+    width: 45%;
     place-content: space-between;
 }
 
  .contact-item:first-child > a {
-    background-image: url(../img/LI-In-Bug.png);
+    background-position: center;
     background-size: 10vh;
     background-repeat: no-repeat;
-    background-position: center;
     display: inline-flex;
+    background-image: url(../img/LI-In-Bug.png);
+}
+
+#liLink {
+    background-position: center;
+}
+#gitLink {
+    margin-right: 2vw;
 }
 
 a > .profile-pic {
@@ -29,7 +38,7 @@ a:hover > .profile-pic {
     clip-path: circle(50% at 50%);
 
 }
-a:hover {
+.contact-item a:hover {
     background: none;
     background-image: none;
 }

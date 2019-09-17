@@ -138,6 +138,7 @@ p {
  	display: block;
  	justify-content: space-around;
  	align-items: center;
+	overflow-y: scroll;
 }
 .overviews {
     display: flex;
