@@ -87,5 +87,10 @@
 		width: 100%;
 	    text-align-last: justify;
 	}
-
+	.lang, .edu {
+		float: none;
+		height:40%;
+		width: auto;
+		margin: 1vh 0;
+	}
 }
