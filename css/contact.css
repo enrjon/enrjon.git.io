@@ -15,6 +15,7 @@
     background-size: 10vh;
     background-repeat: no-repeat;
     background-position: center;
+    display: inline-flex;
 }
 
 a > .profile-pic {
