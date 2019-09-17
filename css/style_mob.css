@@ -93,4 +93,7 @@
 		width: auto;
 		margin: 1vh 0;
 	}
+	.projTabs > li > a {
+		font-size: smaller;
+	}
 }
