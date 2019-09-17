@@ -64,7 +64,6 @@ nav {
 	width: auto;
 }
 
-
 #register {
 	display: none;
 }
@@ -194,4 +193,11 @@ footer {
 	width: 100%;
     bottom: 0;
 	padding: 1vh;
+}
+footer > div {
+	width: 25%;
+    text-align-last: justify;
+}
+footer > div > a:hover {
+	background: none;
 }

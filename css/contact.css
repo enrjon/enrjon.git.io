@@ -1,0 +1,16 @@
+.contact {
+    width: 70%;
+    margin: 20vh 10vw;
+    padding: 4vh 4vw;
+}
+
+ .contact-item {
+    place-content: space-between;
+    width: 50%;
+}
+
+a > .profile-pic {
+    height: 15vh;
+    width: auto;
+    clip-path: circle(40% at 50%);
+}
