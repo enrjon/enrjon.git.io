@@ -98,10 +98,7 @@ h2 {
 li {
     padding: 2vh 1vw;
 }
-.invert > *:not(.duties) {
-    margin-left: auto;
-    text-align: end;
-}
+
 .job-head {
     display: flex;
     flex-direction: row;
