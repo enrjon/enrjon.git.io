@@ -68,26 +68,32 @@ h2 {
 .g1 {
     font-size: larger;
 }
+.g1 > li:last-child {
+    font-style: italic;
+    font-size: initial;
+}
 .g2 {
     display: inline-flex;
     justify-content: space-between;
+    align-items: center;
 }
 .g2 p {
     width: 50%;
     text-indent: 2vw;
 }
 .g2 > img {
-    background: rgba(0, 0, 0, 0.5);
-    height: 20vh;
-    width: auto;
+    background: rgba(255, 255, 255, 0.5);
+    width: 15vh;
     border-radius: 10px;
+    height: 15vh;
+    mix-blend-mode: color-dodge;
 }
 .job {
     display: inline-block;
     margin: 2vh 0vw;
     width:100%;
-    padding: 16vh 15vw 8vh 15vw;
-    clip-path: url("#wave");
+    padding: 8vh 5vw;
+    /*clip-path: url("#wave");*/
 }
 li {
     padding: 2vh 1vw;
@@ -109,21 +115,23 @@ li {
     display: block;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 0;
-    clip-path: polygon(0 0, 100% 0, 95% 100%, 05% 100%);
+    /*clip-path: polygon(0 0, 100% 0, 95% 100%, 05% 100%);*/
     padding: 0 3vw;
 }
 .skills {
     text-align: center;
-    padding: 2vh 5vw;
+    padding: 1vh 5vw;
     border-radius: 0px 0px 0px 0px;
     flex-flow: wrap;
 }
-.skills > h2 {
+.content > div > h2 {
+    text-align: center;
     border-radius: 0;
     background: rgba(255, 255, 255, 0.4);
-    margin: 0 0 -1vh 0;
-    padding: 3vh 0vw;
-    clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);
+    margin: 0 0 1vh 0;
+    padding: 1vh 0vw;
+    border-radius: 50px
+    /*clip-path: polygon(40% 0, 60% 0, 100% 100%, 0% 100%);*/
 }
 
 .folder > ul {

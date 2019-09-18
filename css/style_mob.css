@@ -96,4 +96,12 @@
 	.projTabs > li > a {
 		font-size: smaller;
 	}
+	.g2 {
+		display: inline-block;
+		text-align: center;
+	}
+	.g2 p {
+		width: auto;
+		margin: 4vh 0vw;
+	}
 }
