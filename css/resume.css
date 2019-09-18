@@ -76,7 +76,12 @@ h2 {
     width: 50%;
     text-indent: 2vw;
 }
-
+.g2 > img {
+    background: rgba(0, 0, 0, 0.5);
+    height: 20vh;
+    width: auto;
+    border-radius: 10px;
+}
 .job {
     display: inline-block;
     margin: 2vh 0vw;
