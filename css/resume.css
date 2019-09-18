@@ -149,8 +149,7 @@ li {
     padding: 3vh;
     width: 40%;
     float: left;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5%;
 }
 .lang > ul {
     display: inline-flex;
