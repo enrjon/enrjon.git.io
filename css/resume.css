@@ -146,7 +146,7 @@ li {
 .lang, .edu {
     text-align: center;
     height: auto;
-    padding: 0 0 3vh 0;
+    padding: 3vh;
     width: 40%;
     float: left;
     margin-left: 5%;
