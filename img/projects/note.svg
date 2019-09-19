@@ -1,0 +1,13 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Created using Krita: http://krita.org -->
+<svg xmlns="http://www.w3.org/2000/svg" 
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:krita="http://krita.org/namespaces/svg/krita"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    width="737.28pt"
+    height="737.28pt"
+    viewBox="0 0 737.28 737.28">
+<defs/>
+<rect id="shape0" transform="translate(185.580010436742, 172.080006215753)" fill="#000000" fill-rule="evenodd" width="366.119979126516" height="393.119987568494" rx="29.0211648088302" ry="29.0211648088302"/><ellipse id="shape1" transform="matrix(1.14361701747969 0 0 1 228.737872422439 118.08)" rx="21.6" ry="54" cx="21.6" cy="54" fill="#000000" fill-rule="evenodd"/><ellipse id="shape0" transform="matrix(1.14361706506757 0 0 0.999999974365748 346.201275582583 118.80000138425)" rx="21.6" ry="54" cx="21.6" cy="54" fill="#000000" fill-rule="evenodd"/><ellipse id="shape01" transform="matrix(1.14361706506757 0 0 0.999999974365748 459.85787139454 118.80000138425)" rx="21.6" ry="54" cx="21.6" cy="54" fill="#000000" fill-rule="evenodd"/>
+</svg>
